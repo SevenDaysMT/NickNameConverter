@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace NickNameConverter
@@ -13,7 +6,6 @@ namespace NickNameConverter
     public partial class Form1 : Form
     {
         private MainWindowViewModel _viewModel;
-        //private NicknameProvider nicknameProvider;
         public Form1()
         {
             InitializeComponent();
@@ -23,6 +15,9 @@ namespace NickNameConverter
                 EnglishLetters.DataBindings.Add("Text", _viewModel, nameof(_viewModel.EngLetterNick), true, DataSourceUpdateMode.OnPropertyChanged);
             };
         }
-        
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+        }
     }
 }
