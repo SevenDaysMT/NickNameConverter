@@ -5,11 +5,11 @@ namespace NickNameConverter
 {
     public partial class Form1 : Form
     {
-        private MainWindowViewModel _viewModel;
+        private Model_ _viewModel;
         public Form1()
         {
             InitializeComponent();
-            _viewModel = new MainWindowViewModel();
+            _viewModel = new Model_();
             Load += delegate {
                 RussianLetters.DataBindings.Add("Text", _viewModel, nameof(_viewModel.RusLetterNick), true, DataSourceUpdateMode.OnPropertyChanged);
                 EnglishLetters.DataBindings.Add("Text", _viewModel, nameof(_viewModel.EngLetterNick), true, DataSourceUpdateMode.OnPropertyChanged);

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace NickNameConverter
 {
-    internal class MainWindowViewModel : INotifyPropertyChanged
+    internal class Model_ : INotifyPropertyChanged
     {
         private readonly Dictionary<string, string> _dictionary = new();
         private string _rusLetterNick;
@@ -36,7 +36,7 @@ namespace NickNameConverter
             }
         }
         public event PropertyChangedEventHandler PropertyChanged;
-        public MainWindowViewModel()
+        public Model_()
         {
             InitializeDictionary();
         }
